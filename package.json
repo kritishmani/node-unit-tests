@@ -1,20 +1,24 @@
 {
-  "name": "unit-tests",
-  "version": "0.1.0",
-  "private": true,
-  "description": "A testbed for unit testing Node",
+  "name": "HelloWorld",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Helloworld unit testing",
   "main": "server.js",
   "scripts": {
     "start": "node ./bin/www",
     "test": "nyc ./node_modules/mocha/bin/mocha test/",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint .",
+    "pack": "npm-pack-zip app"
   },
-  "author": "Jordan Kasper",
+  "author": "Manikandan B",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.3",
+    "npm-pack-zip": "^1.2.7",
+    "nyc": "^15.1.0",
     "sinon": "^1.17.2",
     "superagent": "^1.4.0"
-  }
+  },
+  "dependencies": {}
 }
