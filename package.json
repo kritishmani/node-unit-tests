@@ -5,7 +5,9 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/"
+    "start": "node ./bin/www",
+    "test": "nyc ./node_modules/mocha/bin/mocha test/",
+    "lint": "eslint ."
   },
   "author": "Jordan Kasper",
   "license": "MIT",
